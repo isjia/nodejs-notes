@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/isjia/nodejs-notes#readme",
   "devDependencies": {
-    "gitbook": "^3.2.2",
     "gitbook-cli": "^2.3.0",
     "gulp": "^3.9.1",
     "gulp-gh-pages": "^0.5.4",
