@@ -53,7 +53,7 @@
         data-chapter-title="后端搭建 Express API 服务"
         data-filepath="react-express-api/01.md"
         data-basepath=".."
-        data-revision="Thu Nov 10 2016 22:07:41 GMT+0800 (CST)"
+        data-revision="Thu Nov 10 2016 23:30:29 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -377,7 +377,108 @@ app.use(logger(&apos;dev&apos;));
 </code></pre><p>&#x5411; /api &#x53D1;&#x9001;&#x8BF7;&#x6C42;&#xFF0C;&#x6253;&#x5370;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre><code>POST /api 200 23.726 ms - 26
 GET /api 200 1.631 ms - 25
-</code></pre>
+</code></pre><h2 id="&#x6784;&#x5EFA;-rest-api"><a href="http://haoqicat.com/react-express-api/5-rest-api" target="_blank">&#x6784;&#x5EFA; REST API</a></h2>
+<p>&#x8FD9;&#x91CC;&#x4EE5; posts &#xFF08;&#x6587;&#x7AE0;&#xFF09;&#x96C6;&#x5408;&#x4E3A;&#x4F8B;&#xFF0C;&#x6784;&#x5EFA; REST API &#x6765;&#x521B;&#x5EFA;&#x3001;&#x8BFB;&#x53D6;&#x3001;&#x66F4;&#x65B0;&#x3001;&#x5220;&#x9664; &#xFF08;CRUD&#xFF09;posts &#x96C6;&#x5408;&#xFF0C;&#x4E00;&#x7CFB;&#x5217; API &#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>GET /posts
+POST /posts
+PUT /posts/:post_id
+GET /posts/:post_id
+DELETE /posts/:post_id
+</code></pre><p>&#x5728; routes.js &#x4E2D;&#x521B;&#x5EFA; posts API</p>
+<h3 id="&#x83B7;&#x53D6;&#x6240;&#x6709;&#x6587;&#x4EF6;">&#x83B7;&#x53D6;&#x6240;&#x6709;&#x6587;&#x4EF6;</h3>
+<pre><code>var express = require(&apos;express&apos;);
+var Post = require(&apos;./models/post&apos;);
+
+module.exports = function(app){
+  app.get(&apos;/posts&apos;, function(req, res){
+    Post.find().sort({&apos;createdAt&apos;: -1}).exec(function(err, posts){
+      if (err) {
+        return res.status(500).json({error: err.message});
+      }
+      res.json({posts: posts})
+    });
+  });
+}
+</code></pre><p>&#x6CE8;&#x610F;&#xFF1A;&#x82E5;&#x60F3;&#x628A;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x53D1;&#x9001;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x975E; 2xx &#x8303;&#x56F4;&#x5185;&#x7684;&#x72B6;&#x6001;&#x7801;&#xFF0C;&#x8981;&#x4E0D;&#x7136;&#x5BA2;&#x6237;&#x7AEF;&#x4F7F;&#x7528; axios &#x8BF7;&#x6C42; API &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6355;&#x6349;&#x4E0D;&#x5230;&#x8BE5;&#x9519;&#x8BEF;&#x3002;</p>
+<h3 id="&#x521B;&#x5EFA;&#x65B0;&#x6587;&#x7AE0;">&#x521B;&#x5EFA;&#x65B0;&#x6587;&#x7AE0;</h3>
+<pre><code>module.exports = function(app){
+
+  &#xB7;&#xB7;&#xB7;
+  app.post(&apos;/posts&apos;, function(req, res){
+    if (req.body.title === &apos;&apos;){
+      return res.status(400).json({error: &apos;&#x6587;&#x7AE0;&#x6807;&#x9898;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#xFF01;&apos;});
+    }
+    var post = new Post();
+    for (prop in req.body) {
+      post[prop] = req.body[prop];
+    }
+    post.save(function(err){
+      if (err) {
+        return res.status(500).json({error: err.message});
+      }
+      res.json({
+        message: &apos;&#x6587;&#x7AE0;&#x521B;&#x5EFA;&#x6210;&#x529F;&#xFF01;&apos;
+      });
+    });
+  });
+}
+</code></pre><h3 id="&#x8BFB;&#x53D6;&#x6587;&#x7AE0;">&#x8BFB;&#x53D6;&#x6587;&#x7AE0;</h3>
+<pre><code>module.exports = function(app){
+
+  &#xB7;&#xB7;&#xB7;
+  app.get(&apos;/posts/:post_id&apos;, function(req, res){
+    Post.findById({_id: req.params.post_id}, function(err, post){
+      if (err){
+        return res.status(500).json({error: err.message});
+      }
+      res.json({post: post});
+    });
+  });
+}
+</code></pre><h3 id="&#x66F4;&#x65B0;&#x6587;&#x7AE0;">&#x66F4;&#x65B0;&#x6587;&#x7AE0;</h3>
+<pre><code>module.exports = function(app){
+
+  &#xB7;&#xB7;&#xB7;
+  // &#x66F4;&#x65B0;&#x6587;&#x7AE0;
+  app.put(&apos;/posts/:post_id&apos;, function(req, res){
+    Post.findById({_id: req.params.post_id}, function(err, post){
+      if (req.body.title === &apos;&apos;) {
+        return res.status(400).json({error: &apos;&#x6587;&#x7AE0;&#x6807;&#x9898;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#xFF01;&apos;});
+      }
+      for (prop in req.body){
+        post[prop] = req.body[prop];
+      }
+      post.save(function(err){
+        if (err) return res.status(500).json({error: err.message});
+        res.json({message: &apos;&#x6587;&#x7AE0;&#x66F4;&#x65B0;&#x6210;&#x529F;&#x4E86;&#xFF01;&apos;});
+      });
+    });
+  });
+}
+</code></pre><h3 id="&#x5220;&#x9664;&#x6587;&#x7AE0;">&#x5220;&#x9664;&#x6587;&#x7AE0;</h3>
+<pre><code>module.exports = function(app){
+
+  &#xB7;&#xB7;&#xB7;
+  // &#x5220;&#x9664;&#x6587;&#x7AE0;
+  app.delete(&apos;/posts/:post_id&apos;, function(req, res){
+    Post.findById({_id: req.params.post_id}, function(err, post){
+      if (err) return res.status(500).json({error: err.message});
+      post.remove(function(err){
+        if (err) return res.status(500).json({error: err.message});
+        res.json({message: &apos;&#x6587;&#x7AE0;&#x5DF2;&#x7ECF;&#x5220;&#x9664;&#x4E86;&#xFF01;&apos;});
+      });
+    });
+  });
+}
+</code></pre><h3 id="&#x53C2;&#x8003;&#x6587;&#x6863;&#xFF1A;">&#x53C2;&#x8003;&#x6587;&#x6863;&#xFF1A;</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status" target="_blank">HTTP &#x54CD;&#x5E94;&#x72B6;&#x6001;&#x7801;</a></li>
+<li><a href="https://dev.twitter.com/overview/api/response-codes" target="_blank">Twitter API &#x54CD;&#x5E94;&#x72B6;&#x6001;&#x7801; &#xFF08;&#x7FFB;&#x5899;&#x624D;&#x80FD;&#x770B;&#x54E6;&#xFF09;</a></li>
+<li><a href="https://scotch.io/bar-talk/designing-a-restful-web-api" target="_blank">&#x5982;&#x4F55;&#x8BBE;&#x8BA1; RESTful API</a></li>
+<li><a href="https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4" target="_blank">&#x57FA;&#x4E8E; Node &#x548C; Express 4 &#x6784;&#x5EFA; RESTful API</a></li>
+</ul>
+<p><em>The End</em></p>
+
                     
                     </section>
                 
