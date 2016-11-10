@@ -12,16 +12,6 @@ mongoose.connect('mongodb://localhost:27017/react-express-api');
 var db = mongoose.connection;
 db.on('error', console.log) // 如果连接失败打印错误信息
 db.once('open', function(){
-  var post = new Post(
-    {
-      title: 'mongoose usage'
-    }
-  );
-  post.save(function(err){
-    if(err){
-      console.log(err);
-    }
-  });
   console.log('db connected ...');
 });
 
