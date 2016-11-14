@@ -5,3 +5,4 @@
   * [客户端请求 Express API](react-express-api/02.md)
 * [Node.js七天搞定微信公众号](wechat-dev-in-7-days/00.md)
   * [前期准备](wechat-dev-in-7-days/01.md)
+  * [实战入门](wechat-dev-in-7-days/02.md)
