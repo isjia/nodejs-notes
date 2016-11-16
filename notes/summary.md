@@ -7,3 +7,5 @@
   * [前期准备](wechat-dev-in-7-days/01.md)
   * [实战入门](wechat-dev-in-7-days/02.md)
   * [微信流程及技术串讲](wechat-dev-in-7-days/03.md)
+  * [实战进阶](wechat-dev-in-7-days/04.md)
+
