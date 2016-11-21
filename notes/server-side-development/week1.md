@@ -212,3 +212,29 @@ exports.area = function(x,y){
 ### Exercise (Video): Node and the HTTP Module
 
 > w1-13-exercise-video-node-and-the-http-module.mp4
+
+### Exercise (Instructions): Node and the HTTP Module
+
+`node server-2.js`
+
+### Node and HTTP: Additional Resources
+
+**PDFs of Presentations**
+
+- 5-HTTP-Protocol.pdf
+- 6-Node-HTTP.pdf
+
+**Node Resources**
+
+- [Node HTTP](https://nodejs.org/api/http.html)
+- [Anatomy of an HTTP Transation](https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction/)
+- [fs Module](https://nodejs.org/dist/latest-v4.x/docs/api/fs.html)
+- [path Module](https://nodejs.org/dist/latest-v4.x/docs/api/path.html)
+
+**HTTP Resources**
+
+- [Hypertext transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
+- [List of HTTP Status Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
+
+## Introduction to Express
+
