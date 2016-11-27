@@ -1,8 +1,8 @@
 {
-  "name": "server-side-development",
+  "name": "node-mongoose",
   "version": "1.0.0",
   "description": "",
-  "main": "rectangle.js",
+  "main": "dishes-1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "yargs": "^6.4.0"
+    "assert": "^1.4.1",
+    "mongoose": "^4.7.0"
   }
 }

@@ -27,5 +27,8 @@
     "gulp": "^3.9.1",
     "gulp-gh-pages": "^0.5.4",
     "shelljs": "^0.7.5"
+  },
+  "dependencies": {
+    "mongodb": "^2.2.11"
   }
 }

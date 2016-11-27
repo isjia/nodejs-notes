@@ -10,4 +10,6 @@
   * [实战进阶](wechat-dev-in-7-days/04.md)
 * [Server-side Development with NodeJS](server-side-development/00.md)
   * [Introduction to Server-side Development](server-side-development/week1.md)
+  * [Data, Data, Where art Thou Data?](server-side-development/week2.md)
+
 

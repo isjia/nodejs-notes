@@ -238,3 +238,67 @@ exports.area = function(x,y){
 
 ## Introduction to Express
 
+### Objectives and Outcomes
+
+- Implement a web server using the Express framework
+- Develop a web server that supports a REST API
+- Use Express router to implement support for the REST API
+
+### Introduction to Express
+
+> w1-14-introduction-to-express.mp4
+
+**What is Express**
+
+- web framework for Node.js
+- provides a robust set of features
+- many third-party middleware
+
+### Exercise (Video): Introduction to Express Part 1
+
+> w1-15-exercise-video-introduction-to-express-part-1.mp4
+
+### Exercise (Instructions): Introduction to Express Part 1
+
+### Brief Representational State Transfer (REST)
+
+> w1-16-brief-representational-state-transfer-rest.mp4
+
+### Express Router
+
+> w1-17-express-router.mp4
+
+### Exercise (Video): Introduction to Express Part 2
+
+> w1-18-exercise-video-introduction-to-express-part-2.mp4
+
+### Exercise (Instructions): Introduction to Express Part 2
+
+`node server-4.js`
+
+`node server-5.js`
+
+### Introduction to Express: Additional Resources
+
+**PDFs of Presentations**
+
+- 7-Intro-Express.pdf
+- 9-Express-Router.pdf
+- 8-REST.pdf
+
+**Express Resources**
+
+- [ExpressJS](http://expressjs.com/)
+- [Connect](https://github.com/senchalabs/connect)
+- [Express Wiki](https://github.com/expressjs/express/wiki)
+- [morgan](https://github.com/expressjs/morgan)
+- [body-parser](https://github.com/expressjs/body-parser)
+
+**Other Resources**
+
+- [Understanding Express.js](http://evanhahn.com/understanding-express/)
+- [A short guide to Connect Middleware](https://stephensugden.com/middleware_guide/)
+
+*The End*
+
+
