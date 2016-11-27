@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>前期准备 | Node.js 学习笔记</title>
+        <title>Data, Data, Where art Thou Data? | Node.js 学习笔记</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -37,10 +37,8 @@
         
     
     
-    <link rel="next" href="../wechat-dev-in-7-days/02.html" />
     
-    
-    <link rel="prev" href="../wechat-dev-in-7-days/00.html" />
+    <link rel="prev" href="../server-side-development/week1.html" />
     
 
         
@@ -49,9 +47,9 @@
         
         
     <div class="book"
-        data-level="2.1"
-        data-chapter-title="前期准备"
-        data-filepath="wechat-dev-in-7-days/01.md"
+        data-level="3.2"
+        data-chapter-title="Data, Data, Where art Thou Data?"
+        data-filepath="server-side-development/week2.md"
         data-basepath=".."
         data-revision="Sun Nov 27 2016 21:49:00 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -149,7 +147,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="2.1" data-path="wechat-dev-in-7-days/01.html">
+        <li class="chapter " data-level="2.1" data-path="wechat-dev-in-7-days/01.html">
             
                 
                     <a href="../wechat-dev-in-7-days/01.html">
@@ -245,7 +243,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="server-side-development/week2.html">
+        <li class="chapter active" data-level="3.2" data-path="server-side-development/week2.html">
             
                 
                     <a href="../server-side-development/week2.html">
@@ -298,120 +296,176 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="&#x524D;&#x671F;&#x51C6;&#x5907;">&#x524D;&#x671F;&#x51C6;&#x5907;</h1>
-<h2 id="11-&#x8BFE;&#x7A0B;&#x7B80;&#x4ECB;">1-1 <a href="http://coding.imooc.com/lesson/38.html#mid=249" target="_blank">&#x8BFE;&#x7A0B;&#x7B80;&#x4ECB;</a></h2>
-<h3 id="&#x672C;&#x8BFE;&#x7A0B;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x4E86;&#x89E3;&#xFF1A;">&#x672C;&#x8BFE;&#x7A0B;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x4E86;&#x89E3;&#xFF1A;</h3>
+                        <h1 id="week-2-data-data-where-art-thou-data">Week 2 <a href="https://www.coursera.org/learn/server-side-development/home/week/2" target="_blank">Data, Data, Where art Thou Data?</a></h1>
+<h2 id="express-generator">Express Generator</h2>
+<h3 id="objectives-and-outcomes">Objectives and Outcomes</h3>
+<p>Express Generator: a scarffold tool to quickly generate an Express application</p>
 <ul>
-<li>&#x5FAE;&#x4FE1;&#x4EA4;&#x4E92;&#x6D41;&#x7A0B;</li>
-<li>Nodejs &#x4F7F;&#x7528;&#x6280;&#x5DE7;</li>
-<li>&#x67B6;&#x6784;&#x9879;&#x76EE;&#x7684;&#x65B9;&#x5F0F;</li>
-<li>Koa &#x6846;&#x67B6;&#x7684;&#x4F7F;&#x7528;</li>
-<li>ES2015 &#x7684;&#x65B0;&#x7279;&#x6027;</li>
+<li>Quickly scarffold out a typical Express application</li>
+<li>Build an Express server to support REST API</li>
 </ul>
-<h3 id="&#x8BFE;&#x7A0B;&#x6D89;&#x53CA;&#x7684;-nodejs-&#x77E5;&#x8BC6;&#x70B9;">&#x8BFE;&#x7A0B;&#x6D89;&#x53CA;&#x7684; nodejs &#x77E5;&#x8BC6;&#x70B9;</h3>
+<h3 id="express-generator">Express Generator</h3>
+<blockquote>
+<p>w2-express-generator.mp4</p>
+</blockquote>
 <ul>
-<li>js sdk</li>
-<li>yield</li>
-<li>koa</li>
-<li>bluebird</li>
-<li>Request</li>
-<li>ejs</li>
-<li>loadash</li>
-<li>raw-body</li>
-<li>sha1</li>
-<li>xml2js</li>
+<li>npm package: <code>npm install express-generator -g</code></li>
+<li><code>express APP_Name</code></li>
+<li><code>npm intall</code></li>
 </ul>
-<h3 id="&#x9884;&#x5907;&#x77E5;&#x8BC6;&#x5EFA;&#x8BAE;">&#x9884;&#x5907;&#x77E5;&#x8BC6;&#x5EFA;&#x8BAE;</h3>
+<h3 id="exercise-video-express-generator">Exercise (Video): Express Generator</h3>
+<blockquote>
+<p>w2-exercise-video-express-generator.mp4</p>
+</blockquote>
 <ul>
-<li>&#x80FD;&#x5229;&#x7528; Nodejs &#x5F00;&#x53D1;&#x4E00;&#x4E9B;&#x7F51;&#x9875;&#x6216;&#x8005;&#x722C;&#x866B;&#xFF0C;&#x5BF9; Nodejs API &#x6709;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x7684;&#x8BA4;&#x77E5;</li>
-<li>&#x6709;&#x4E00;&#x4E9B;&#x5176;&#x4ED6;&#x540E;&#x7AEF;&#x8BED;&#x8A00;&#x7684;&#x7ECF;&#x9A8C;&#xFF0C;&#x660E;&#x767D;&#x4E00;&#x4E2A; HTTP &#x8BF7;&#x6C42;&#x4ECE;&#x5F00;&#x59CB;&#x5230;&#x7ED3;&#x675F;&#x4E2D;&#x95F4;&#x6240;&#x7ECF;&#x8FC7;&#x7684;&#x73AF;&#x8282;</li>
-<li>javascript &#x8BED;&#x8A00;&#x5165;&#x95E8;</li>
-<li>nodejs &#x5165;&#x95E8;&#x8BFE;&#x7A0B;</li>
+<li><code>npm install express-generator -g</code></li>
+<li><code>express node-express-gen</code></li>
+<li><code>npm install</code></li>
+<li><code>npm start</code></li>
 </ul>
-<h2 id="12-day-1-&#x8BFE;&#x7A0B;&#x5185;&#x5BB9;">1-2 <a href="http://coding.imooc.com/lesson/38.html#mid=250" target="_blank">Day 1 &#x8BFE;&#x7A0B;&#x5185;&#x5BB9;</a></h2>
-<ol>
-<li>&#x4E86;&#x89E3;&#x5FAE;&#x4FE1;&#x53F7;&#x7684;&#x79CD;&#x7C7B;</li>
-<li>&#x672C;&#x5730;&#x4EE3;&#x7406;&#x73AF;&#x5883;&#x7684;&#x642D;&#x5EFA;&#x4EE5;&#x53CA;&#x6700;&#x5165;&#x95E8;&#x7684;&#x52A0;&#x5BC6;&#x8BA4;&#x8BC1;</li>
-</ol>
-<h2 id="13-&#x5FAE;&#x4FE1;&#x53F7;&#x5206;&#x7C7B;&#x548C;&#x529F;&#x80FD;">1-3 <a href="http://coding.imooc.com/lesson/38.html#mid=251" target="_blank">&#x5FAE;&#x4FE1;&#x53F7;&#x5206;&#x7C7B;&#x548C;&#x529F;&#x80FD;</a></h2>
-<h3 id="&#x5FAE;&#x4FE1;&#x53F7;&#x7684;&#x5206;&#x7C7B;">&#x5FAE;&#x4FE1;&#x53F7;&#x7684;&#x5206;&#x7C7B;</h3>
-<ol>
-<li>&#x4F01;&#x4E1A;&#x53F7;&#xFF1A;&#x4E3A;&#x4F01;&#x4E1A;&#x6216;&#x7EC4;&#x7EC7;&#x63D0;&#x4F9B;&#x79FB;&#x52A8;&#x5E94;&#x7528;&#x5165;&#x53E3;&#x3001;&#x4E0A;&#x4E0B;&#x6E38;&#x4F9B;&#x5E94;&#x94FE;&#x53CA;&#x4F01;&#x4E1A;&#x5E94;&#x7528;&#x95F4;&#x7684;&#x94FE;&#x63A5;</li>
-<li>&#x8BA2;&#x9605;&#x53F7;&#xFF1A;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x4FE1;&#x606F;&#x4F20;&#x64AD;&#xFF0C;&#x5E2E;&#x52A9;&#x7BA1;&#x7406;&#x7528;&#x6237;&#x548C;&#x7528;&#x6237;&#x4E92;&#x52A8;&#xFF0C;&#x4F8B;&#x5982;&#x64B0;&#x5199;&#x6587;&#x7AE0;&#x3001;&#x8D44;&#x8BAF;&#x4F20;&#x64AD;&#x3001;&#x6D88;&#x606F;&#x8BA2;&#x5236;</li>
-<li>&#x670D;&#x52A1;&#x53F7;&#xFF1A;&#x4E3A;&#x4F01;&#x4E1A;&#x548C;&#x7EC4;&#x7EC7;&#x63D0;&#x4F9B;&#x4E1A;&#x52A1;&#x670D;&#x52A1;&#x4E8E;&#x7528;&#x6237;&#x7BA1;&#x7406;&#xFF0C;&#x4F8B;&#x5982;&#x652F;&#x4ED8;&#x3001;&#x667A;&#x80FD;&#x63A5;&#x53E3;
-&#x53E6;&#x5916;&#xFF1A;&#x5EFA;&#x8BAE;&#x505A;&#x8BA4;&#x8BC1;</li>
-</ol>
-<h3 id="9&#x5927;&#x63A5;&#x53E3;">9&#x5927;&#x63A5;&#x53E3;</h3>
-<ol>
-<li>&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#xFF1A;&#x8BC6;&#x522B;&#x8BED;&#x97F3;&#xFF0C;&#x5E76;&#x7FFB;&#x8BD1;&#x6210;&#x6587;&#x672C;&#x5185;&#x5BB9;</li>
-<li>&#x5BA2;&#x670D;&#x63A5;&#x53E3;&#xFF1A;&#x53D1;&#x9001;&#x8FC7;&#x6D88;&#x606F;&#x7684;24&#x5C0F;&#x65F6;&#x5185;&#xFF0C;&#x56DE;&#x590D;&#x6D88;&#x606F;</li>
-<li>OAuth2.0 &#x7F51;&#x9875;&#x6388;&#x6743;&#xFF1A;&#x901A;&#x8FC7;&#x6388;&#x6743;&#x62FF;&#x5230;&#x7528;&#x6237;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</li>
-<li>&#x751F;&#x6210;&#x5E26;&#x53C2;&#x4E8C;&#x7EF4;&#x7801;&#xFF1A;</li>
-<li>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x7684;&#x5730;&#x7406;&#x4F4D;&#x7F6E;</li>
-<li>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#xFF1A;&#x5934;&#x50CF;&#x3001;&#x59D3;&#x540D;&#x3001;&#x6027;&#x522B;&#x3001;&#x5730;&#x533A;</li>
-<li>&#x83B7;&#x53D6;&#x5173;&#x6CE8;&#x8005;&#x5217;&#x8868;&#xFF1A;&#x6240;&#x6709;&#x5173;&#x6CE8;&#x8FC7;&#x516C;&#x4F17;&#x53F7;&#x7684;&#x7528;&#x6237;&#x7684;OpenID</li>
-<li>&#x7528;&#x6237;&#x5206;&#x7EC4;</li>
-<li>&#x4E0A;&#x4F20;&#x4E0B;&#x8F7D;&#x591A;&#x5A92;&#x4F53;&#x6587;&#x4EF6;</li>
-</ol>
-<h2 id="14-&#x57DF;&#x540D;&#x3001;&#x670D;&#x52A1;&#x5668;&#x53CA;-ngrok-&#x73AF;&#x5883;&#x914D;&#x7F6E;">1-4 <a href="http://coding.imooc.com/lesson/38.html#mid=252" target="_blank">&#x57DF;&#x540D;&#x3001;&#x670D;&#x52A1;&#x5668;&#x53CA; ngrok &#x73AF;&#x5883;&#x914D;&#x7F6E;</a></h2>
-<h3 id="&#x57DF;&#x540D;">&#x57DF;&#x540D;</h3>
-<h3 id="&#x670D;&#x52A1;&#x5668;">&#x670D;&#x52A1;&#x5668;</h3>
-<h3 id="ngrok-&#x73AF;&#x5883;&#x914D;&#x7F6E;">ngrok &#x73AF;&#x5883;&#x914D;&#x7F6E;</h3>
-<p>ngrok &#x642D;&#x5EFA;&#x7684;&#x4E00;&#x4E2A;&#x96A7;&#x9053;&#xFF0C;&#x5C06;&#x672C;&#x5730;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x6620;&#x5C04;&#x5230;&#x5916;&#x7F51;&#xFF0C;&#x5F00;&#x53D1;&#x5FC5;&#x5907;</p>
-<p>&#x5EFA;&#x8BAE;&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x642D;&#x5EFA;&#x4E00;&#x4E2A; ngrok &#x73AF;&#x5883;</p>
-<h2 id="15-&#x914D;&#x7F6E;&#x3001;&#x63A5;&#x5165;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;">1-5 <a href="http://coding.imooc.com/lesson/38.html#mid=253" target="_blank">&#x914D;&#x7F6E;&#x3001;&#x63A5;&#x5165;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;</a></h2>
-<h3 id="&#x4F7F;&#x7528;&#x6D4B;&#x8BD5;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;">&#x4F7F;&#x7528;&#x6D4B;&#x8BD5;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;</h3>
-<p>&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177; - &#x7533;&#x8BF7;&#x5F00;&#x53D1;&#x8005;&#x6D4B;&#x8BD5;&#x53F7;</p>
-<h3 id="&#x63A5;&#x5165;">&#x63A5;&#x5165;</h3>
-<ol>
-<li>&#x914D;&#x7F6E;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x540E;&#x53F0;&#xFF0C;&#x5305;&#x62EC; URL&#x3001;token&#x3001;EncodingAESKey &#x7B49;</li>
-<li>&#x9A8C;&#x8BC1;&#x516C;&#x4F17;&#x53F7;</li>
-<li>token</li>
-<li>timestamp&#xFF1A;&#x65F6;&#x95F4;&#x6233;</li>
-<li>nonce&#xFF1A;&#x968F;&#x673A;&#x6570;
-Step1 &#x5C06;token&#x3001;timestamp&#x3001;nonce &#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x5B57;&#x5178;&#x6392;&#x5E8F;
-Step2 &#x5C06;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x62FC;&#x63A5;&#x6210;1&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x8FDB;&#x884C; sha1 &#x52A0;&#x5BC6;
-Step3 &#x6BD4;&#x5BF9;&#x52A0;&#x5BC6;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E0E;signature&#xFF0C;&#x4E00;&#x81F4;&#x5219;&#x8FD4;&#x56DE;echostr&#xFF0C;&#x63A5;&#x5165;&#x9A8C;&#x8BC1;&#x6210;&#x529F;</li>
-</ol>
-<h2 id="16-&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x52A0;&#x5BC6;&#x8BA4;&#x8BC1;&#x903B;&#x8F91;">1-6 <a href="http://coding.imooc.com/lesson/38.html#mid=254" target="_blank">&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x52A0;&#x5BC6;&#x8BA4;&#x8BC1;&#x903B;&#x8F91;</a></h2>
-<pre><code>&apos;use strict&apos;
+<h3 id="express-generator-additional-resources">Express Generator: Additional Resources</h3>
+<p><strong>PDFs of Presentations</strong></p>
+<ul>
+<li>1-Express-Generator.pdf</li>
+</ul>
+<p><strong>Express Generator Resources</strong></p>
+<ul>
+<li><a href="http://expressjs.com/" target="_blank">Express</a></li>
+<li><a href="http://expressjs.com/en/starter/generator.html" target="_blank">Express Generator</a></li>
+</ul>
+<h2 id="introduction-to-mongodb">Introduction to MongoDB</h2>
+<h3 id="objectives-and-outcomes">Objectives and Outcomes</h3>
+<ul>
+<li>feature of MongoDB</li>
+<li>difference between SQL and NoSQL DB</li>
+<li>run MongoDB server</li>
+<li>mongo REPL shell</li>
+</ul>
+<h3 id="introduction-to-mongodb">Introduction to MongoDB</h3>
+<blockquote>
+<p>w2-introduction-to-mongodb.mp4</p>
+</blockquote>
+<h3 id="exercise-video-introduction-to-mongodb">Exercise (Video): Introduction to MongoDB</h3>
+<blockquote>
+<p>w2-exercise-video-introduction-to-mongodb.mp4</p>
+</blockquote>
+<ul>
+<li>db -&gt; collectioins -&gt; documents</li>
+<li><code>mongo</code>: start mongo shell</li>
+<li><code>db</code>: show currrent database</li>
+<li><code>use coFusion</code>: switch db</li>
+<li><code>db.help()</code></li>
+<li><code>db.dishes.find().pretty()</code></li>
+</ul>
+<h3 id="exercise-instructions-introduction-to-mongodb">Exercise (Instructions): Introduction to MongoDB</h3>
+<ul>
+<li><code>mongod --dbpath=data</code></li>
+<li><code>mongo</code></li>
+</ul>
+<h3 id="introduction-to-mongodb-additional-resources">Introduction to MongoDB: Additional Resources</h3>
+<p><strong>PDFs Presentations</strong></p>
+<ul>
+<li>2-Intro-MongoDB.pdf</li>
+</ul>
+<p><strong>MongoDB Resources</strong></p>
+<ul>
+<li><a href="http://www.mongodb.org/" target="_blank">MOngoDB</a></li>
+<li><a href="http://docs.mongodb.org/manual/" target="_blank">MongoDB documentation</a></li>
+<li><a href="http://docs.mongodb.org/manual/installation/" target="_blank">MongoDB Installation</a></li>
+<li><a href="http://docs.mongodb.org/manual/mongo/" target="_blank">The mongo Shell</a></li>
+</ul>
+<h2 id="node-and-mongodb">Node and MongoDB</h2>
+<h3 id="objectives-and-outcomes">Objectives and Outcomes</h3>
+<ul>
+<li>configure Node application to communicate with a MogoDB server</li>
+<li>Perform various db operations</li>
+</ul>
+<h3 id="node-and-mongodb">Node and MongoDB</h3>
+<blockquote>
+<p>w2-node-and-mongodb.mp4</p>
+</blockquote>
+<ul>
+<li>Node MongoDB Driver <code>npm install mongodb --save</code></li>
+<li>support both callback based and promise based interactions</li>
+</ul>
+<h3 id="exercise-video-node-and-mongodb-part-1">Exercise (Video): Node and MongoDB Part 1</h3>
+<blockquote>
+<p>w2-exercise-video-node-and-mongodb-part-1.mp4</p>
+</blockquote>
+<h3 id="exercise-instructions-node-and-mongodb-part-1">Exercise (Instructions): Node and MongoDB Part 1</h3>
+<p><code>./node-mongodb/node simpleserver.js</code></p>
+<h3 id="exercise-video-node-and-mongodb-part-2">Exercise (Video): Node and MongoDB Part 2</h3>
+<blockquote>
+<p>w2-exercise-video-node-and-mongodb-part-2.mp4</p>
+</blockquote>
+<h3 id="exercise-instructions-node-and-mongodb-part-2">Exercise (Instructions): Node and MongoDB Part 2</h3>
+<h3 id="node-and-mongodb-additional-resources">Node and MongoDB: Additional Resources</h3>
+<p><strong>PDFs of Presentations</strong></p>
+<ul>
+<li>3-Node-MongoDB.pdf</li>
+</ul>
+<p><strong>MongoDB Resources</strong></p>
+<ul>
+<li><a href="https://github.com/mongodb/node-mongodb-native" target="_blank">MongoDB Native Driver</a></li>
+<li><a href="http://mongodb.github.io/node-mongodb-native/" target="_blank">MongoDB NodeJS Native Driver Documentation</a></li>
+</ul>
+<h2 id="mongoose-odm">Mongoose ODM</h2>
+<h3 id="objectives-and-outcomes">Objectives and Outcomes</h3>
+<ul>
+<li>Define and construct Mongoose schemas and models</li>
+<li>Interact with MongoDB server using Mongoose from your Node application</li>
+</ul>
+<h3 id="mongoose-odm">Mongoose ODM</h3>
+<p><strong>Mongoose ODM</strong></p>
+<ul>
+<li>Object Data Model</li>
+<li>Object Document Mapping</li>
+<li>Object relational mapping (ORM)</li>
+<li>Adds structure to MongoDB documents through schema</li>
+</ul>
+<p><strong>Mongoose Schema</strong></p>
+<ul>
+<li>Schema: structure of data to be stored; defines all the fields of your document</li>
+<li>Schema types: String, Number, Date, Buffer, Boolean, Mixed, ObjectId, Array</li>
+<li>Schema is used to create a Model function</li>
+</ul>
+<h3 id="exercise-video-mongoose-odm">Exercise (Video): Mongoose ODM</h3>
+<blockquote>
+<p>w2-exercise-video-mongoose-odm.mp4</p>
+</blockquote>
+<h3 id="exercise-instructions-mongoose-odm">Exercise (Instructions): Mongoose ODM</h3>
+<blockquote>
+<p>w2-exercise-video-mongoose-odm.mp4</p>
+</blockquote>
+<ul>
+<li>create a schema, <code>var dishSchema = new Schema({&#x2026;}, {timestamps: true});</code></li>
+<li>create a model, <code>var Dishes= moogose.model(&#x2018;Dish&#x2019;, dishSchema);</code></li>
+<li>module.exports</li>
+</ul>
+<h3 id="exercise-instructions-mongoose-odm">Exercise (Instructions): Mongoose ODM</h3>
+<h3 id="mongoose-odm-additional-resources">Mongoose ODM: Additional Resources</h3>
+<p><strong>PDFs of Presentations</strong></p>
+<ul>
+<li>4-Mongoose-ODM.pdf</li>
+</ul>
+<p><strong>Mongoose Resources</strong></p>
+<ul>
+<li><a href="http://mongoosejs.com/" target="_blank">Mongoose</a></li>
+<li><a href="http://mongoosejs.com/docs/guide.html" target="_blank">Mongoose Documentation</a></li>
+<li><a href="http://mongoosejs.com/docs/guide.html" target="_blank">Mongoose Schemas</a></li>
+<li><a href="http://mongoosejs.com/docs/models.html" target="_blank">Mongoose Models</a></li>
+<li><a href="http://mongoosejs.com/docs/subdocs.html" target="_blank">Mongoose Sub-documents</a></li>
+<li><a href="https://www.npmjs.com/package/mongoose-currency" target="_blank">Mongoose-currency</a></li>
+</ul>
+<p><strong>Other Resources</strong></p>
+<ul>
+<li><a href="http://openmymind.net/Multiple-Collections-Versus-Embedded-Documents/#1" target="_blank">Multiple collections vs Embedded documents</a></li>
+</ul>
+<h2 id="assignments">Assignments</h2>
+<blockquote>
+<p>w2-assignment-2-video-requirements.mp4</p>
+</blockquote>
 
-var Koa = require(&apos;koa&apos;);
-var sha1 = require(&apos;sha1&apos;);
-
-var config = {
-  wechat: {
-    appID: &apos;wx2704383e0c0f944a&apos;,
-    appSecret: &apos;9ef9579cb364c6b51779514ae5078f9d&apos;,
-    token: &apos;6dbebd742ce6dd008c42ce1d&apos;
-  }
-}
-
-var app = new Koa();
-
-app.use(function *(next){
-  console.log(this.query);
-
-  var token = config.wechat.token;
-  var signature = this.query.signature;
-  var nonce = this.query.nonce;
-  var timestamp = this.query.timestamp;
-  var echostr = this.query.echostr;
-
-  var str = [token, timestamp, nonce].sort().join(&apos;&apos;);
-  var sha = sha1(str);
-
-  if (sha === signature) {
-    this.body = echostr;
-  }
-  else {
-    this.body = &apos;error&apos;;
-  }
-})
-
-app.listen(3000);
-console.log(&apos;Running on port 3000...&apos;);
-</code></pre>
                     
                     </section>
                 
@@ -421,10 +475,8 @@ console.log(&apos;Running on port 3000...&apos;);
         </div>
 
         
-        <a href="../wechat-dev-in-7-days/00.html" class="navigation navigation-prev " aria-label="Previous page: Node.js七天搞定微信公众号"><i class="fa fa-angle-left"></i></a>
+        <a href="../server-side-development/week1.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Introduction to Server-side Development"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../wechat-dev-in-7-days/02.html" class="navigation navigation-next " aria-label="Next page: 实战入门"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
