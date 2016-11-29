@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>实战进阶 | Node.js 学习笔记</title>
+        <title>Halt! Who goes there? | Node.js 学习笔记</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -37,10 +37,8 @@
         
     
     
-    <link rel="next" href="../server-side-development/00.html" />
     
-    
-    <link rel="prev" href="../wechat-dev-in-7-days/03.html" />
+    <link rel="prev" href="../server-side-development/week2.html" />
     
 
         
@@ -49,9 +47,9 @@
         
         
     <div class="book"
-        data-level="2.4"
-        data-chapter-title="实战进阶"
-        data-filepath="wechat-dev-in-7-days/04.md"
+        data-level="3.3"
+        data-chapter-title="Halt! Who goes there?"
+        data-filepath="server-side-development/week3.md"
         data-basepath=".."
         data-revision="Tue Nov 29 2016 16:16:02 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -194,7 +192,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.4" data-path="wechat-dev-in-7-days/04.html">
+        <li class="chapter " data-level="2.4" data-path="wechat-dev-in-7-days/04.html">
             
                 
                     <a href="../wechat-dev-in-7-days/04.html">
@@ -260,7 +258,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="server-side-development/week3.html">
+        <li class="chapter active" data-level="3.3" data-path="server-side-development/week3.html">
             
                 
                     <a href="../server-side-development/week3.html">
@@ -313,20 +311,37 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="&#x5B9E;&#x6218;&#x8FDB;&#x9636;">&#x5B9E;&#x6218;&#x8FDB;&#x9636;</h1>
-<h2 id="41-&#x7B80;&#x4ECB;">4-1 <a href="http://coding.imooc.com/lesson/38.html#mid=275" target="_blank">&#x7B80;&#x4ECB;</a></h2>
-<p>&#x904D;&#x5386;&#x5FAE;&#x4FE1;&#x91CD;&#x8981;&#x63A5;&#x53E3;&#xFF1A;</p>
+                        <h1 id="halt-who-goes-there">Halt! Who goes there?</h1>
+<h2 id="rest-api-with-express-mongodb-and-mongoose">REST API with Express, MongoDB and Mongoose</h2>
+<h3 id="objectives-and-outcomes">Objectives and Outcomes</h3>
 <ul>
-<li>&#x4E0A;&#x4F20;&#x4E34;&#x65F6;&#x7D20;&#x6750;&#xFF1A;&#x56FE;&#x7247;&#x548C;&#x89C6;&#x9891;</li>
-<li>&#x6C38;&#x4E45;&#x7D20;&#x6750;&#x63A5;&#x53E3;</li>
-<li>&#x7528;&#x6237;&#x5206;&#x7EC4;</li>
-<li>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x79C1;&#x5BC6;&#x4FE1;&#x606F;</li>
-<li>&#x5730;&#x7406;&#x4F4D;&#x7F6E;&#x548C;&#x7528;&#x6237;&#x8D44;&#x6599;</li>
+<li>develop a full-fledged REST API server with Express, MongoDB and Mongoose</li>
+<li>Implement the end-to-end solution integrating Express, Node and Mongo</li>
 </ul>
-<h2 id="42-&#x5C01;&#x88C5;&#x6D88;&#x606F;&#x54CD;&#x5E94;&#x6A21;&#x5757;">4-2 <a href="http://coding.imooc.com/lesson/38.html#mid=276" target="_blank">&#x5C01;&#x88C5;&#x6D88;&#x606F;&#x54CD;&#x5E94;&#x6A21;&#x5757;</a></h2>
-<h2 id="43-&#x81EA;&#x52A8;&#x56DE;&#x590D;&#x5404;&#x79CD;&#x6D88;&#x606F;">4-3 <a href="http://coding.imooc.com/lesson/38.html#mid=277" target="_blank">&#x81EA;&#x52A8;&#x56DE;&#x590D;&#x5404;&#x79CD;&#x6D88;&#x606F;</a></h2>
-<h2 id="44-&#x4E0A;&#x4F20;&#x4E34;&#x65F6;&#x7D20;&#x6750;&#x4E4B;&#x56FE;&#x7247;&#x548C;&#x89C6;&#x9891;">4-4 <a href="http://coding.imooc.com/lesson/38.html#mid=278" target="_blank">&#x4E0A;&#x4F20;&#x4E34;&#x65F6;&#x7D20;&#x6750;&#x4E4B;&#x56FE;&#x7247;&#x548C;&#x89C6;&#x9891;</a></h2>
-<h2 id="45-&#x8361;&#x5E73;&#x6C38;&#x4E45;&#x7D20;&#x6750;&#x63A5;&#x53E3;&#x4E0A;&#x4F20;">4-5 <a href="http://coding.imooc.com/lesson/38.html#mid=279" target="_blank">&#x8361;&#x5E73;&#x6C38;&#x4E45;&#x7D20;&#x6750;&#x63A5;&#x53E3;-&#x4E0A;&#x4F20;</a></h2>
+<h3 id="rest-api-with-express-mongodb-and-mongoose">REST API with Express, MongoDB and Mongoose</h3>
+<blockquote>
+<p>w3-01-rest-api-with-express-mongodb-and-mongoose.mp4</p>
+</blockquote>
+<h3 id="exercise-video-rest-api-with-express-mongodb-and-mongoose">Exercise (Video): REST API with Express, MongoDB and Mongoose</h3>
+<blockquote>
+<p>w3-02-exercise-video-rest-api-with-express-mongodb-and-mongoose.mp4</p>
+</blockquote>
+<h3 id="exercise-instructions-rest-api-with-express-mongodb-and-mongoose">Exercise (Instructions): REST API with Express, MongoDB and Mongoose</h3>
+<h3 id="rest-api-with-express-mongodb-and-mongoose-additional-resources">REST API with Express, MongoDB and Mongoose: Additional Resources</h3>
+<p><strong>PDFs of Presentations</strong></p>
+<ul>
+<li>1-REST-Express-Mongo-Mongoose.pdf</li>
+</ul>
+<p><strong>Exercise Resources</strong></p>
+<ul>
+<li>db.json</li>
+</ul>
+<p><strong>Other Resources</strong></p>
+<ul>
+<li><a href="https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4" target="_blank">Build a RESTful API Using Node and Express 4</a></li>
+<li><a href="http://adrianmejia.com/blog/2014/10/01/creating-a-restful-api-tutorial-with-nodejs-and-mongodb/" target="_blank">Creating RESTful APIs With NodeJS and MongoDB Tutorial (Part II)</a></li>
+<li><a href="http://cwbuecheler.com/web/tutorials/2014/restful-web-app-node-express-mongodb/" target="_blank">CREATING A SIMPLE RESTFUL WEB APP WITH NODE.JS, EXPRESS, AND MONGODB</a></li>
+</ul>
 
                     
                     </section>
@@ -337,10 +352,8 @@
         </div>
 
         
-        <a href="../wechat-dev-in-7-days/03.html" class="navigation navigation-prev " aria-label="Previous page: 微信流程及技术串讲"><i class="fa fa-angle-left"></i></a>
+        <a href="../server-side-development/week2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Data, Data, Where art Thou Data?"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../server-side-development/00.html" class="navigation navigation-next " aria-label="Next page: Server-side Development with NodeJS"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
