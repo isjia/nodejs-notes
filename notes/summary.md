@@ -11,5 +11,6 @@
 * [Server-side Development with NodeJS](server-side-development/00.md)
   * [Introduction to Server-side Development](server-side-development/week1.md)
   * [Data, Data, Where art Thou Data?](server-side-development/week2.md)
+  * [Halt! Who goes there?](server-side-development/week3.md)
 
 
