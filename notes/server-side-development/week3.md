@@ -33,3 +33,32 @@
 - [Creating RESTful APIs With NodeJS and MongoDB Tutorial (Part II)](http://adrianmejia.com/blog/2014/10/01/creating-a-restful-api-tutorial-with-nodejs-and-mongodb/)
 - [CREATING A SIMPLE RESTFUL WEB APP WITH NODE.JS, EXPRESS, AND MONGODB](http://cwbuecheler.com/web/tutorials/2014/restful-web-app-node-express-mongodb/)
 
+## Basic Authentication
+
+### Basic Authentication: Objectives and Outcomes
+
+- Understood the basics of user authentication
+- Used basic authentication support to authenticate users
+
+### Basic Authentication
+
+> w3-03-basic-authentication.mp4
+
+### Exercise (Video): Basic Authentication
+
+> w3-04-exercise-video-basic-authentication.mp4
+
+### Exercise (Instructions): Basic Authentication
+
+`/basic-auth/server.js`
+
+### Additional Resources
+
+**PDFs of Presentations**
+
+- 2-Basic-Authentication.pdf
+
+**Other Resources**
+
+- [Basic access authentication (Wikipedia)](https://en.wikipedia.org/wiki/Basic_access_authentication)
+- [Basic Access Authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basic_access_authentication)
