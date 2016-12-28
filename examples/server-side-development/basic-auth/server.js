@@ -27,7 +27,7 @@ function auth(req, res, next){
     next(); //authorized
   }
   else {
-    var err = new Error('You are note authenticated!');
+    var err = new Error('You are not authenticated!');
     err.status = 401;
     next(err);
   }
